@@ -219,8 +219,79 @@
         <div style="height:20px;"></div>
         <div class="row">
             <div class="col-sm-12 col-md-12"  id="publications">
-                <h2>Publications</h2>
+                <h2>Publications & Preprints</h2>
             </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./img/PODA.png" style="width: 500px;" class="img-fluid rounded-start">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div style="height:10px;"></div>
+                                <h5 class="card-title">PODA: Prompt-driven Zero-shot Domain Adaptation</h5>
+                                <p class="card-text">
+                                    <div>Mohammad Fahes,
+                                        <a href="https://tuanhungvu.github.io/" target="_blank">Tuan-Hung Vu</a>,
+                                        <a href="https://abursuc.github.io/" target="_blank">Andrei Bursuc</a>,
+                                        <a href="https://ptrckprz.github.io/" target="_blank">Patrick Pérez</a>,
+                                        <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank">Raoul de Charette</a>
+                                    </div>
+                                    <div>Preprint</div>
+                                    <p class="card-text">
+                                        <div>
+                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#PODA_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Abstract
+                                            </a>  
+                                            <a href="https://arxiv.org/pdf/2212.03241.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                                PDF
+                                            </a>
+                                            <a href="https://github.com/astra-vision/PODA" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                                Code
+                                            </a>
+                                            <a href="https://astra-vision.github.io/PODA/" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                                Project Page
+                                            </a>
+                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_PODA" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Bibtex
+                                            </a>                                          
+                                        </div>
+                                        <div class="collapse" id="bibtex_PODA">
+                                            <div style="height:10px;"></div>
+                                            <p class="card-text">
+                                                <pre>
+        
+        @article{fahes2022poda,
+            author = {Fahes, Mohammad and Vu, Tuan-Hung and Bursuc, Andrei and P{\'e}rez, Patrick and de Charette, Raoul},
+            title = {PODA: Prompt-driven Zero-shot Domain Adaptation},
+            publisher = {arXiv},
+            year = {2022},
+            project = {https://astra-vision.github.io/PODA/},
+            }
+                                                                          
+                                                </pre>
+                                            </p>
+                                        </div>
+                                        <div class="collapse" id="PODA_abstract">
+                                            <div style="height:10px;"></div>
+                                            <p class="card-text">
+                                                Domain adaptation has been vastly investigated in computer vision but still requires access to target images at train time, which might be intractable in some conditions, especially for long-tail samples. In this paper, we propose the task of ‘Prompt-driven Zero-shot Domain Adaptation’, where we adapt a model trained on a source domain using only a general textual description of the target domain, i.e., a prompt. First, we leverage a pretrained contrastive vision-language model (CLIP) to optimize affine transformations of source features, bringing them closer to target text embeddings, while preserving their content and semantics. Second, we show that augmented features can be used to perform zero-shot domain adaptation for semantic segmentation. Experiments demonstrate that our method significantly outperforms CLIP-based style transfer baselines on several datasets for the downstream task at hand. Our prompt-driven approach even outperforms one-shot unsupervised domain adaptation on some datasets, and gives comparable results on others.
+                                            </p>
+                                        </div>
+        
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
 
         <div class="row">
@@ -235,7 +306,8 @@
                                 <div style="height:10px;"></div>
                                 <h5 class="card-title">Unrolling PALM for Sparse Semi-Blind Source Separation</h5>
                                 <p class="card-text">
-                                    <div>Mohammad Fahes, Christophe Kervazo, Jérôme Bobin, Florence Tupin</div>
+                                    <div>Mohammad Fahes, <a href="https://sites.google.com/view/christophekervazo/" target="_blank">Christophe Kervazo</a>, <a
+                                        href="http://jerome-bobin.fr/" target="_blank">Jérôme Bobin</a>, <a href="https://perso.telecom-paristech.fr/tupin/" target="_blank">Florence Tupin</a> </div>
                                     <div>ICLR 2022</div>
                                     <p class="card-text">
                                         <div>
@@ -292,7 +364,7 @@
 
         <hr>
 
-    </div>
+</div>
 </div>
 
 <!-- <div style="height:15px;"></div>
