@@ -137,7 +137,7 @@
 
         <div class="row">
                 <p>
-                    I am a first-year PhD student at <a href="https://astra-vision.github.io/" target="_blank">Astra-vision</a> group, a joint team between <a href="https://www.inria.fr/" target="_blank">Inria</a> and <a href="https://www.valeo.com/en/valeo-ai/" target="_blank">valeo.ai</a>. 
+                    I am a first-year PhD student at <a href="https://astra-vision.github.io/" target="_blank">Astra-vision</a>, a joint group between <a href="https://www.inria.fr/" target="_blank">Inria</a> and <a href="https://www.valeo.com/en/valeo-ai/" target="_blank">valeo.ai</a>. 
                    I'm currently working on scene understanding in adverse conditions, under the supervision of  
                    <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank">Raoul de Charette</a>,
                    <a href="https://tuanhungvu.github.io/" target="_blank">Tuan-Hung Vu</a> , <a href="https://abursuc.github.io/" target="_blank">Andrei Bursuc</a> and
@@ -164,7 +164,7 @@
                 <span class="badge color2022">07 / 2023</span>
             </div>
             <div class="col-sm-10 col-md-10 col-lg-11">
-                <a href="https://arxiv.org/abs/2212.03241" target="_blank">PØDA</a> is accepted at ICCV 2023.
+                <a href="https://arxiv.org/abs/2212.03241" target="_blank">PØDA</a> is accepted at <a href="https://iccv2023.thecvf.com/" target="_blank">ICCV 2023</a>.
             </div>
         </div> 
         
@@ -202,8 +202,8 @@
                 <span class="badge color2022">01 / 2022</span>
             </div>
             <div class="col-sm-10 col-md-10 col-lg-11">
-                <a href="https://arxiv.org/abs/2112.05694" target="_blank">LPALM </a> has been accepted at 
-                <a href="https://openreview.net/group?id=ICLR.cc/2022/Conference" target="_blank">ICLR 2022</a>!
+                <a href="https://arxiv.org/abs/2112.05694" target="_blank">LPALM </a> is accepted at 
+                <a href="https://openreview.net/group?id=ICLR.cc/2022/Conference" target="_blank">ICLR 2022</a>.
             </div>
         </div>
         
@@ -275,11 +275,11 @@
                                             <p class="card-text">
                                                 <pre>
         
-@article{fahes2022poda,
+@inproceedings{fahes2023poda,
     title={P{\O}DA: Prompt-driven Zero-shot Domain Adaptation},
     author={Fahes, Mohammad and Vu, Tuan-Hung and Bursuc, Andrei and P{\'e}rez, Patrick and de Charette, Raoul},
-    journal={arXiv preprint arXiv:2212.03241},
-    year={2022}
+    booktitle={ICCV},
+    year={2023}
     }
                                                                           
                                                 </pre>
@@ -288,7 +288,11 @@
                                         <div class="collapse" id="PODA_abstract">
                                             <div style="height:10px;"></div>
                                             <p class="card-text">
-                                                Domain adaptation has been vastly investigated in computer vision but still requires access to target images at train time, which might be intractable in some conditions, especially for long-tail samples. In this paper, we propose the task of ‘Prompt-driven Zero-shot Domain Adaptation’, where we adapt a model trained on a source domain using only a general textual description of the target domain, i.e., a prompt. First, we leverage a pretrained contrastive vision-language model (CLIP) to optimize affine transformations of source features, bringing them closer to target text embeddings, while preserving their content and semantics. Second, we show that augmented features can be used to perform zero-shot domain adaptation for semantic segmentation. Experiments demonstrate that our method significantly outperforms CLIP-based style transfer baselines on several datasets for the downstream task at hand. Our prompt-driven approach even outperforms one-shot unsupervised domain adaptation on some datasets, and gives comparable results on others.
+                                                Domain adaptation has been vastly investigated in computer vision but still requires access to target images at train
+                                                time, which might be intractable in some uncommon conditions. In this paper, we propose the task of ‘Prompt-driven
+                                                Zero-shot Domain Adaptation’, where we adapt a model trained on a source domain using only a general description in natural language of the target domain, i.e., a prompt. First, we leverage a pretrained contrastive vision-language
+                                                model (CLIP) to optimize affine transformations of source features, steering them towards the target text embedding
+                                                while preserving their content and semantics. To achieve this, we propose Prompt-driven Instance Normalization (PIN). Second, we show that these prompt-driven augmentations can be used to perform zero-shot domain adaptation for semantic segmentation. Experiments demonstrate that our method significantly outperforms CLIP-based style transfer baselines on several datasets for the downstream task at hand, even surpassing one-shot unsupervised domain adaptation. A similar boost is observed on object detection and image classification.
                                             </p>
                                         </div>
         
