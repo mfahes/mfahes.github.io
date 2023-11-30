@@ -161,6 +161,15 @@
 
         <div class="row">                        
             <div class="col-sm-2 col-md-2 col-lg-1">
+                <span class="badge color2022">11 / 2023</span>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-11">
+                <a href="https://arxiv.org/abs/2311.17922" target="_blank">FAMix</a> paper on generalizing semantic segmentation using language is online.
+            </div>
+        </div> 
+
+        <div class="row">                        
+            <div class="col-sm-2 col-md-2 col-lg-1">
                 <span class="badge color2022">07 / 2023</span>
             </div>
             <div class="col-sm-10 col-md-10 col-lg-11">
@@ -232,48 +241,101 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div style="height:10px;"></div>
+                <h5 class="card-title">A Simple Recipe for Language-guided Domain Generalized Segmentation</h5>
+                <p class="card-text">
+                    <div>Mohammad Fahes,
+                        <a href="https://tuanhungvu.github.io/" target="_blank">Tuan-Hung Vu</a>,
+                        <a href="https://abursuc.github.io/" target="_blank">Andrei Bursuc</a>,
+                        <a href="https://ptrckprz.github.io/" target="_blank">Patrick Pérez</a>,
+                        <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank">Raoul de Charette</a>
+                    </div>
+                    <div>Preprint</div>
+                    <p class="card-text">
+                        <div>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#FAMix_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Abstract
+                            </a>  
+                            <a href="https://arxiv.org/pdf/2311.17922.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                PDF
+                            </a>
+                            <a href="https://github.com/astra-vision/FAMix" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Code
+                            </a>
+                            <a href="https://astra-vision.github.io/FAMix/" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Project Page
+                            </a>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_FAMix" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Bibtex
+                            </a>                                          
+                        </div>
+                        <div class="collapse" id="bibtex_FAMix">
+                            <div style="height:10px;"></div>
+                            <p class="card-text">
+                                <pre>
+        
+@misc{fahes2023simple,
+    title={A Simple Recipe for Language-guided Domain Generalized Segmentation},
+    author={Fahes, Mohammad and Vu, Tuan-Hung and Bursuc, Andrei and P{\'e}rez, Patrick and de Charette, Raoul},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    year={2023}
+}
+                                                                          
+                                </pre>
+                            </p>
+                        </div>
+                        <div class="collapse" id="FAMix_abstract">
+                            <div style="height:10px;"></div>
+                            <p class="card-text">
+                                Generalization to new domains not seen during training is one of the long-standing goals and challenges in deploying neural networks in real-world applications. Existing generalization techniques necessitate substantial data augmentation, potentially sourced from external datasets, and aim at learning invariant representations by imposing various alignment constraints. Large-scale pretraining has recently shown promising generalization capabilities, along with the potential of bridging different modalities. For instance, the recent advent of vision-language models like CLIP has opened the doorway for vision models to exploit the textual modality. In this paper, we introduce a simple framework for generalizing semantic segmentation networks by employing language as the source of randomization. Our recipe comprises three key ingredients: i) the preservation of the intrinsic CLIP robustness through minimal fine-tuning, ii) language-driven local style augmentation, and iii) randomization by locally mixing the source and augmented styles during training. Extensive experiments report state-of-the-art results on various generalization benchmarks. The code will be made available. 
+                            </p>
+                        </div>
+
+                    </p>
+                </p>
+            </div>
+
+        
+        </div>
+
 
         <div class="row">
             <div class="col-sm-12 col-md-12">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./img/PODA.png" style="width: 500px;" class="img-fluid rounded-start">
+                <div style="height:10px;"></div>
+                <h5 class="card-title">PØDA: Prompt-driven Zero-shot Domain Adaptation</h5>
+                <p class="card-text">
+                    <div>Mohammad Fahes,
+                        <a href="https://tuanhungvu.github.io/" target="_blank">Tuan-Hung Vu</a>,
+                        <a href="https://abursuc.github.io/" target="_blank">Andrei Bursuc</a>,
+                        <a href="https://ptrckprz.github.io/" target="_blank">Patrick Pérez</a>,
+                        <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank">Raoul de Charette</a>
+                    </div>
+                    <div>ICCV 2023</div>
+                    <p class="card-text">
+                        <div>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#PODA_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Abstract
+                            </a>  
+                            <a href="https://arxiv.org/pdf/2212.03241.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                PDF
+                            </a>
+                            <a href="https://github.com/astra-vision/PODA" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Code
+                            </a>
+                            <a href="https://astra-vision.github.io/PODA/" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Project Page
+                            </a>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_PODA" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Bibtex
+                            </a>                                          
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <div style="height:10px;"></div>
-                                <h5 class="card-title">PØDA: Prompt-driven Zero-shot Domain Adaptation</h5>
-                                <p class="card-text">
-                                    <div>Mohammad Fahes,
-                                        <a href="https://tuanhungvu.github.io/" target="_blank">Tuan-Hung Vu</a>,
-                                        <a href="https://abursuc.github.io/" target="_blank">Andrei Bursuc</a>,
-                                        <a href="https://ptrckprz.github.io/" target="_blank">Patrick Pérez</a>,
-                                        <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank">Raoul de Charette</a>
-                                    </div>
-                                    <div>ICCV 2023</div>
-                                    <p class="card-text">
-                                        <div>
-                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#PODA_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                Abstract
-                                            </a>  
-                                            <a href="https://arxiv.org/pdf/2212.03241.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                PDF
-                                            </a>
-                                            <a href="https://github.com/astra-vision/PODA" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                Code
-                                            </a>
-                                            <a href="https://astra-vision.github.io/PODA/" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                Project Page
-                                            </a>
-                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_PODA" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                Bibtex
-                                            </a>                                          
-                                        </div>
-                                        <div class="collapse" id="bibtex_PODA">
-                                            <div style="height:10px;"></div>
-                                            <p class="card-text">
-                                                <pre>
+                        <div class="collapse" id="bibtex_PODA">
+                            <div style="height:10px;"></div>
+                            <p class="card-text">
+                                <pre>
         
 @inproceedings{fahes2023poda,
     title={P{\O}DA: Prompt-driven Zero-shot Domain Adaptation},
@@ -299,53 +361,42 @@
                                     </p>
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
+                     
         </div>
 
         <div class="row">
             <div class="col-sm-12 col-md-12">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./img/LPALM_sep.jpeg" style="width: 500px;" class="img-fluid rounded-start">
+                <div style="height:10px;"></div>
+                <h5 class="card-title">Unrolling PALM for Sparse Semi-Blind Source Separation</h5>
+                <p class="card-text">
+                    <div>Mohammad Fahes, <a href="https://sites.google.com/view/christophekervazo/" target="_blank">Christophe Kervazo</a>, <a
+                        href="http://jerome-bobin.fr/" target="_blank">Jérôme Bobin</a>, <a href="https://perso.telecom-paristech.fr/tupin/" target="_blank">Florence Tupin</a> </div>
+                    <div>ICLR 2022</div>
+                    <p class="card-text">
+                        <div>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#LPALM_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Abstract
+                            </a>  
+                            <a href="https://arxiv.org/pdf/2112.05694.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                PDF
+                            </a>
+                            <a href="https://github.com/mfahes/LPALM" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Code
+                            </a>
+                            <a href="./img/poster_LPALM.png" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Poster
+                            </a>
+                            <a href="https://iclr.cc/virtual/2022/poster/6592" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
+                                Video
+                            </a>
+                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_LPALM" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Bibtex
+                            </a>                                          
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <div style="height:10px;"></div>
-                                <h5 class="card-title">Unrolling PALM for Sparse Semi-Blind Source Separation</h5>
-                                <p class="card-text">
-                                    <div>Mohammad Fahes, <a href="https://sites.google.com/view/christophekervazo/" target="_blank">Christophe Kervazo</a>, <a
-                                        href="http://jerome-bobin.fr/" target="_blank">Jérôme Bobin</a>, <a href="https://perso.telecom-paristech.fr/tupin/" target="_blank">Florence Tupin</a> </div>
-                                    <div>ICLR 2022</div>
-                                    <p class="card-text">
-                                        <div>
-                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#LPALM_abstract" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                Abstract
-                                            </a>  
-                                            <a href="https://arxiv.org/pdf/2112.05694.pdf" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                PDF
-                                            </a>
-                                            <a href="https://github.com/mfahes/LPALM" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                Code
-                                            </a>
-                                            <a href="./img/poster_LPALM.png" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                Poster
-                                            </a>
-                                            <a href="https://iclr.cc/virtual/2022/poster/6592" class="btn btn-2022 btn-sm" role="button" aria-expanded="false" target="_blank">
-                                                Video
-                                            </a>
-                                            <a class="btn btn-2022 btn-sm" data-bs-toggle="collapse" href="#bibtex_LPALM" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                Bibtex
-                                            </a>                                          
-                                        </div>
-                                        <div class="collapse" id="bibtex_LPALM">
-                                            <div style="height:10px;"></div>
-                                            <p class="card-text">
-                                                <pre>
+                        <div class="collapse" id="bibtex_LPALM">
+                            <div style="height:10px;"></div>
+                            <p class="card-text">
+                                <pre>
 @inproceedings{
     fahes2022unrolling,
     title={Unrolling {PALM} for Sparse Semi-Blind Source Separation},
@@ -367,14 +418,10 @@
                                     </p>
                                 </p>
                             </div>
+
                         </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-        <hr>
+                        <hr>
 
 </div>
 </div>
