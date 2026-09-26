@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9STBVGW92"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M9STBVGW92');
+    </script>
+
+    <!-- Begin SEO tag -->
+    <title>Mohammad Fahes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Mohammad Fahes, CS PhD (Inria).">
+    <meta name="author" content="Mohammad Fahes">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://mfahes.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohammad Fahes" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:description"
+        content="Mohammad Fahes, CS PhD (Inria)." />
+    <meta property="og:url" content="https://mfahes.github.io/" />
+    <meta property="og:site_name" content="Mohammad Fahes" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammad Fahes",
+        "jobTitle": "CS PhD",
+        "affiliation": { "@type": "Organization", "name": "Inria" },
+        "url": "https://mfahes.github.io/",
+        "email": "mailto:mohammad.fahes@inria.fr",
+        "description": "Mohammad Fahes, CS PhD (Inria).",
+        "sameAs": [
+            "https://github.com/mfahes",
+            "https://scholar.google.com/citations?user=AcWj3loAAAAJ",
+            "https://www.linkedin.com/in/mohammad-fahes-1463b1190/"
+        ]
+    }
+    </script>
+    <!-- End SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root {
+            --bg: #000000;
+            --text: #ececf1;
+            --text-muted: #9a9aa8;
+            --border: #262636;
+            --accent: #a9744f;
+            --maxw: 1100px;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 100%; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+        a:hover { border-color: var(--accent); }
+
+        main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+        section { padding: 36px 0; }
+
+        header.intro { padding-top: 96px; }
+        .intro-row { display: flex; align-items: flex-start; gap: 28px; }
+        .intro-text { flex: 1; min-width: 0; }
+        .avatar {
+            flex-shrink: 0;
+            margin-top: 18px;
+            width: 172px;
+            height: 190px;
+            border-radius: 14px;
+            object-fit: cover;
+            object-position: center top;
+            border: 1px solid var(--border);
+            background: #0b0b12;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0 0 6px;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+        .role { font-size: 1rem; color: var(--text-muted); margin: 0; }
+
+        h2 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            margin: 0 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--border), transparent);
+        }
+
+        .socials { display: flex; gap: 14px; margin-top: 24px; }
+        .socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: #0b0b12;
+            transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+        }
+        .socials a svg { width: 24px; height: 24px; display: block; }
+        .socials a:hover { transform: translateY(-3px); }
+        .socials a:nth-child(1):hover { border-color: #e53935; background: color-mix(in srgb, #e53935 18%, #0b0b12); }
+        .socials a:nth-child(2):hover { border-color: #ffffff; background: color-mix(in srgb, #ffffff 14%, #0b0b12); }
+        .socials a:nth-child(3):hover { border-color: #4285f4; background: color-mix(in srgb, #4285f4 18%, #0b0b12); }
+        .socials a:nth-child(4):hover { border-color: #0a66c2; background: color-mix(in srgb, #0a66c2 22%, #0b0b12); }
+
+        p { margin: 0 0 14px; }
+
+        /* Research interests */
+        .interests { font-size: 0.9rem; color: var(--text-muted); margin: 6px 0 0; }
+
+        /* News */
+        .news-list {
+            max-height: 45vh;
+            overflow-y: auto;
+            padding-right: 12px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent) transparent;
+        }
+        .news-list::-webkit-scrollbar { width: 8px; }
+        .news-list::-webkit-scrollbar-track { background: transparent; }
+        .news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+        .news-list::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+        .news-item { display: flex; gap: 16px; margin-bottom: 14px; }
+        .news-date {
+            flex-shrink: 0;
+            width: 88px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+            padding-top: 3px;
+        }
+        .news-body { flex: 1; }
+
+        /* Publications */
+        .pub-list { display: flex; flex-direction: column; gap: 18px; }
+        .pub-item {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: #0b0b12;
+            padding: 18px 20px;
+            transition: border-color 0.15s ease, transform 0.15s ease;
+        }
+        .pub-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .pub-title { font-size: 0.98rem; font-weight: 700; color: #ffffff; margin: 0 0 4px; }
+        .pub-title a { color: #ffffff; }
+        .pub-title a:hover { color: var(--accent); }
+        .pub-authors { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 4px; }
+        .pub-authors .me { color: var(--text); font-weight: 600; }
+        .pub-venue {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin: 0 0 10px;
+        }
+        .pub-summary { font-size: 0.9rem; color: var(--text-muted); margin: 0; }
+
+        /* Academic services */
+        .service-item { display: flex; gap: 16px; margin-bottom: 14px; }
+        .service-item:last-child { margin-bottom: 0; }
+        .service-role {
+            flex-shrink: 0;
+            width: 168px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .service-body { flex: 1; color: var(--text-muted); font-size: 0.9rem; }
+
+        @media (max-width: 560px) {
+            header.intro { padding-top: 48px; }
+            .intro-row { flex-direction: column; gap: 20px; }
+            .avatar { margin-top: 13px; width: 140px; height: 156px; }
+            h1 { font-size: 1.7rem; }
+            .news-item { flex-direction: column; gap: 2px; }
+            .news-date { width: auto; }
+            .service-item { flex-direction: column; gap: 2px; }
+            .service-role { width: auto; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="intro">
+            <div class="intro-row">
+                <img class="avatar" src="mfahes.jpg" alt="Mohammad Fahes" width="172" height="190">
+                <div class="intro-text">
+                    <h1>Mohammad Fahes</h1>
+                    <p class="role">CS PhD (Inria)</p>
+                    <p class="interests"><strong>Research interests:</strong> Multimodal Learning, LLMs, Efficient Adaptation, Generalization, Computer Vision, Deep Learning</p>
+                    <p class="interests">More broadly, I'm interested in machine learning, mathematics, epistemology, and science in general.</p>
+                    <div class="socials">
+                <a href="mailto:mohammad.fahes@inria.fr" title="Email" aria-label="Email">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"/>
+                        <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"/>
+                        <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"/>
+                        <path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"/>
+                        <path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0C43.076,8,45,9.924,45,12.298z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/mfahes" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#ffffff" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+                <a href="https://scholar.google.com/citations?user=AcWj3loAAAAJ&hl=fr&oi=sras" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#4285f4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269z"/>
+                        <path fill="#a0c3ff" d="M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mohammad-fahes-1463b1190/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#0a66c2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                    </svg>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- News -->
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">09/2026</div>
+                    <div class="news-body">I defended my PhD, entitled <strong>Efficient Adaptation of Vision-Language Models</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">04/2026</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2410.21361" target="_blank" rel="noopener">Domain Adaptation with a Single VL Embedding</a> is accepted at <strong>IJCV 2026</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">11/2025</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2410.05270" target="_blank" rel="noopener">ProLIP</a> is accepted at <strong>WACV 2026</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">10/2025</div>
+                    <div class="news-body"><a href="https://iccv.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer" target="_blank" rel="noopener">Outstanding Reviewer</a> award at <strong>ICCV 2025</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">08/2025</div>
+                    <div class="news-body">I started a 6-month internship at <strong>Google DeepMind</strong>, working with <a href="https://cordeliaschmid.github.io/" target="_blank" rel="noopener">Cordelia Schmid</a> and <a href="https://anuragarnab.github.io/" target="_blank" rel="noopener">Anurag Arnab</a>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">06/2025</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2504.10487" target="_blank" rel="noopener">FLOSS</a> is accepted at <strong>ICCV 2025</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">05/2025</div>
+                    <div class="news-body"><a href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer" target="_blank" rel="noopener">Outstanding Reviewer</a> award at <strong>CVPR 2025</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">09/2024</div>
+                    <div class="news-body"><a href="https://eccv.ecva.net/Conferences/2024/Reviewers#all-outstanding-reviewers" target="_blank" rel="noopener">Outstanding Reviewer</a> award at <strong>ECCV 2024</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">02/2024</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2311.17922" target="_blank" rel="noopener">FAMix</a> is accepted at <strong>CVPR 2024</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">07/2023</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2212.03241" target="_blank" rel="noopener">PØDA</a> is accepted at <strong>ICCV 2023</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">10/2022</div>
+                    <div class="news-body">I started my PhD at <strong>Inria</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">01/2022</div>
+                    <div class="news-body"><a href="https://arxiv.org/abs/2112.05694" target="_blank" rel="noopener">LPALM</a> is accepted at <strong>ICLR 2022</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">04/2021</div>
+                    <div class="news-body">I started my final-year internship at <strong>Télécom Paris</strong>.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2410.21361" target="_blank" rel="noopener">Domain Adaptation with a Single Vision-Language Embedding</a></p>
+                    <p class="pub-authors"><span class="me">Mohammad Fahes</span>, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette</p>
+                    <p class="pub-venue">IJCV 2026</p>
+                    <p class="pub-summary">A unified framework for domain adaptation that replaces all target data with a single vision-language latent vector.</p>
+                </div>
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2410.05270" target="_blank" rel="noopener">CLIP's Visual Embedding Projector is a Few-shot Cornucopia</a></p>
+                    <p class="pub-authors"><span class="me">Mohammad Fahes</span>, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette</p>
+                    <p class="pub-venue">WACV 2026</p>
+                    <p class="pub-summary">Few-shot and test-time adaptation of VLMs need not be complicated: regularized fine-tuning of their projection matrix suffices.</p>
+                </div>
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2504.10487" target="_blank" rel="noopener">FLOSS: Free Lunch in Open-vocabulary Semantic Segmentation</a></p>
+                    <p class="pub-authors">Yasser Benigmim, <span class="me">Mohammad Fahes</span>, Tuan-Hung Vu, Andrei Bursuc, Raoul de Charette</p>
+                    <p class="pub-venue">ICCV 2025</p>
+                    <p class="pub-summary">Improving open-vocabulary semantic segmentation with unsupervised prompt selection.</p>
+                </div>
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2311.17922" target="_blank" rel="noopener">A Simple Recipe for Language-guided Domain Generalized Segmentation</a></p>
+                    <p class="pub-authors"><span class="me">Mohammad Fahes</span>, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette</p>
+                    <p class="pub-venue">CVPR 2024</p>
+                    <p class="pub-summary">Multi-source domain generalization can be replaced by a single source domain combined with random language prompts.</p>
+                </div>
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2212.03241" target="_blank" rel="noopener">PØDA: Prompt-driven Zero-shot Domain Adaptation</a></p>
+                    <p class="pub-authors"><span class="me">Mohammad Fahes</span>, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette</p>
+                    <p class="pub-venue">ICCV 2023</p>
+                    <p class="pub-summary">A new framework for domain adaptation driven by a single natural-language prompt.</p>
+                </div>
+                <div class="pub-item">
+                    <p class="pub-title"><a href="https://arxiv.org/abs/2112.05694" target="_blank" rel="noopener">Unrolling PALM for Sparse Semi-blind Source Separation</a></p>
+                    <p class="pub-authors"><span class="me">Mohammad Fahes</span>, Christophe Kervazo, Jérôme Bobin, Florence Tupin</p>
+                    <p class="pub-venue">ICLR 2022</p>
+                    <p class="pub-summary">An unrolled version of the PALM algorithm that reduces its sensitivity to initialization and improves source separation quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic services -->
+        <section id="services">
+            <h2>Academic Services</h2>
+            <div class="service-item">
+                <div class="service-role">Conference Reviewer</div>
+                <div class="service-body">CVPR 2024–2025, ECCV 2024, ICLR 2025, ICCV 2025, NeurIPS 2025–2026, ICLR 2027.</div>
+            </div>
+            <div class="service-item">
+                <div class="service-role">Journal Reviewer</div>
+                <div class="service-body">IEEE Transactions on Multimedia.</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
