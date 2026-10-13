@@ -192,15 +192,15 @@
             border-radius: 12px;
             border: 1px solid var(--border);
             background: var(--card);
-            transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+            transition: border-color 0.15s ease, transform 0.15s ease;
         }
         .socials a svg { width: 24px; height: 24px; display: block; }
         .socials a:nth-child(2) svg path { fill: var(--heading); }
         .socials a:hover { transform: translateY(-3px); }
-        .socials a:nth-child(1):hover { border-color: #e53935; background: color-mix(in srgb, #e53935 18%, var(--card)); }
-        .socials a:nth-child(2):hover { border-color: var(--heading); background: color-mix(in srgb, var(--heading) 14%, var(--card)); }
-        .socials a:nth-child(3):hover { border-color: #4285f4; background: color-mix(in srgb, #4285f4 18%, var(--card)); }
-        .socials a:nth-child(4):hover { border-color: #0a66c2; background: color-mix(in srgb, #0a66c2 22%, var(--card)); }
+        .socials a:nth-child(1):hover { border-color: #e53935; }
+        .socials a:nth-child(2):hover { border-color: var(--heading); }
+        .socials a:nth-child(3):hover { border-color: #4285f4; }
+        .socials a:nth-child(4):hover { border-color: #0a66c2; }
 
         p { margin: 0 0 14px; }
 
@@ -212,12 +212,12 @@
             overflow-y: auto;
             padding-right: 12px;
             scrollbar-width: thin;
-            scrollbar-color: var(--accent) transparent;
+            scrollbar-color: var(--border) transparent;
         }
         .news-list::-webkit-scrollbar { width: 8px; }
         .news-list::-webkit-scrollbar-track { background: transparent; }
         .news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
-        .news-list::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+        .news-list::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
         .news-item {
             display: flex;
             gap: 18px;
@@ -241,23 +241,9 @@
             border-radius: 14px;
             background: var(--card);
             padding: 20px 22px;
-            position: relative;
-            overflow: hidden;
-            transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+            transition: border-color 0.15s ease, transform 0.15s ease;
         }
-        .pub-item::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--accent);
-            opacity: 0;
-            transition: opacity 0.15s ease;
-        }
-        .pub-item:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.22); }
-        .pub-item:hover::before { opacity: 1; }
+        .pub-item:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); transform: translateY(-3px); }
         .pub-venue {
             display: inline-block;
             font-size: 0.72rem;
