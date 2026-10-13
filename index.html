@@ -312,7 +312,16 @@
         :root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
         @media (max-width: 720px) {
-            .nav-links { display: none; }
+            .nav-name { display: none; }
+            .nav-links {
+                margin-left: 0;
+                flex: 1;
+                min-width: 0;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+            .nav-links::-webkit-scrollbar { display: none; }
+            .nav-links a { padding: 7px 10px; white-space: nowrap; }
         }
         @media (max-width: 560px) {
             header.intro { padding-top: 36px; }
